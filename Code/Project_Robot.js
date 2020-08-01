@@ -1,3 +1,15 @@
+function compareRobots(robot1,memory1,robot2,memory2) {
+    let totalTurns1=0;
+    let totalTurns2=0;
+    for(let i=1;i<=100;i++) {
+        let curScen=VillegeState.random();
+        totalTurns1+=runRobot(curScen,robot1,memory1);
+        totalTurns2+=runRobot(curScen,robot2,memory2);
+    }
+    console.log(`robot1 has mean of ${Math.floor(totalTurns1/100)} turns per run.`);
+    console.log(`robot2 has mean of ${Math.floor(totalTurns2/100)} turns per run.`);
+}
+/*-----------------------------------------------------------------------------------------------*/
 function findRoute(graph,from,to) {
     let work=[{at:from,route:[]}];
     for(let i=0;i<work.length;i++) {
