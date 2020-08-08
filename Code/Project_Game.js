@@ -17,7 +17,7 @@ async function runGame(plans,Display) {
     }
     console.log("You've won!");
 }
-//----------------------------------------------------------------------
+
 //Excersize 2
 let pause=1;
 function trackKeys(keys) {
@@ -61,7 +61,7 @@ function runLevel(level,Display) {
         });
     });
 }
-//-----------------------------------------------------------------------
+
 //Excersize 3
 class Monster {
     constructor(pos,direction) {
