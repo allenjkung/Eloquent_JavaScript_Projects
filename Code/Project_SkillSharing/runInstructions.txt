@@ -1,0 +1,11 @@
+Make sure to run these files using node.js. Run command prompt and input the following command:
+    node skillsharing_server.js
+on the same directory that skillsharing_server.js is located.
+
+Make sure the following are installed in node.js:
+    http
+    ecstatic
+    fs
+    url
+
+The link of the result should be found via: http://localhost:8000/index.html .
